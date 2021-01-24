@@ -1,0 +1,21 @@
+@import '~@prefix/styles/src/blueprint-variables';
+@import '~@prefix/styles/src/utils/index';
+@import './colors';
+
+// admin
+$sidebar-width: 250px;
+$sidebar-width-small: 70px;
+$sidebar-padding-x: 15px;
+$max-width: 1440px;
+$min-date-range-input-width: 220px;
+
+$header-height: 55px !default;
+$bottom-navigation-height: 60px !default;
+$break-point: 768px !default;
+
+// client
+$fix-width: 1280px;
+
+$base-font-family: -apple-system, Microsoft JhengHei, BlinkMacSystemFont,
+  Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue,
+  sans-serif;

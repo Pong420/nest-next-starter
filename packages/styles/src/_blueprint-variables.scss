@@ -1,0 +1,80 @@
+@import '~@blueprintjs/core/src/common/colors';
+@import '~@blueprintjs/core/src/common/mixins';
+@import '~@blueprintjs/core/src/common/variables';
+
+// Buttons
+$pt-button-height: 34px;
+$pt-button-height-small: 26px;
+$dark-button-background-color: #{lighten(#333, 5%)};
+$dark-button-background-color-hover: #{lighten(#333, 10%)};
+$dark-button-background-color-active: #{lighten(#333, 15%)};
+$dark-button-background-color-disabled: #333;
+$dark-button-background-color-active-disabled: darken(#333, 20%);
+
+// Inputs
+$pt-input-height: $pt-button-height;
+
+// card
+$dark-card-background-color: var(--primary-color);
+
+// divider
+$pt-dark-divider-black: rgba(255, 255, 255, 0.15);
+
+// menu
+$menu-min-width: 140px;
+$dark-menu-background-color: var(--primary-color);
+
+// drawer
+$dark-drawer-background-color: var(--primary-color);
+
+//
+$pt-dark-drop-shadow-opacity-2: 1;
+
+// prettier-ignore
+$pt-dark-elevation-shadow-0: 0 0 0 1px $pt-dark-divider-black,
+                             0 0 0 rgba($black, 0),
+                             0 0 0 rgba($black, 0);
+// prettier-ignore
+$pt-dark-elevation-shadow-1: 0 0 0 1px #444,
+                             0 0 0 rgba($black, 0),
+                             0 1px 1px rgba($black, $pt-dark-drop-shadow-opacity-2);
+// prettier-ignore
+$pt-dark-elevation-shadow-2: 0 0 0 1px #444,
+                             0 1px 1px rgba($black, $pt-dark-drop-shadow-opacity-2),
+                             0 2px 6px rgba($black, $pt-dark-drop-shadow-opacity-2);
+// prettier-ignore
+$pt-dark-elevation-shadow-3: 0 0 0 1px #444,
+                             0 2px 4px rgba($black, $pt-dark-drop-shadow-opacity-2),
+                             0 8px 24px rgba($black, $pt-dark-drop-shadow-opacity-2);
+// prettier-ignore
+$pt-dark-elevation-shadow-4: 0 0 0 1px #444,
+                             0 4px 8px rgba($black, $pt-dark-drop-shadow-opacity-2),
+                             0 18px 46px 6px rgba($black, $pt-dark-drop-shadow-opacity-2);
+
+// prettier-ignore
+$pt-dark-input-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
+                           0 0 0 rgba($black, 0),
+                           0 0 0 rgba($black, 0);
+
+$button-intents: (
+  'primary': (
+    $pt-intent-primary,
+    darken($pt-intent-primary, 15%),
+    darken($pt-intent-primary, 25%)
+  ),
+  'success': (
+    $pt-intent-success,
+    $green2,
+    $green1
+  ),
+  'warning': (
+    $pt-intent-warning,
+    $orange2,
+    $orange1
+  ),
+  'danger': (
+    $pt-intent-danger,
+    $red2,
+    $red1
+  )
+);
